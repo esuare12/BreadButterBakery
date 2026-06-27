@@ -94,7 +94,7 @@ nav a{
     text-decoration: none;
 }
 
-main{
+#main_index, #main_shop{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 30px;
@@ -107,29 +107,33 @@ section{
     padding: 30px;
 }
 
+.shopping-cart{
+    height: 500px;
+}
+
 h2{
     font-size: 40px;
 }
 
-.popular{
+.popular, .all_items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-column: 1 / 2;
 }
 
-.popular div{
+.popular div, .all_items div{
     margin: 20px;
     background-color: var(--bg-card);
 }
 
-.popular h2{
+.popular h2, .all_items h2{
     grid-column: 1/-1;
 }
 
-.popular p{
+.popular p, .all_items p{
     font-size: 20px;
 }
 
-.popular img{
+.popular img, .all_items img{
     width: 250px;
 }

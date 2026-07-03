@@ -45,7 +45,7 @@ table {
 :root {
   /* Dark Base */
   --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
+  
   --bg-card: #1a1a2e;
   --bg-dark: #050508;
   
@@ -59,6 +59,10 @@ body{
     width: 1400px;
     margin: 0 auto;
     background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+a:visited{
     color: var(--text-primary);
 }
 
@@ -115,23 +119,37 @@ h2{
     font-size: 40px;
 }
 
-.popular, .all_items{
+.popular{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-column: 1 / 2;
 }
 
-.popular div, .all_items div{
+#pastries, #sweets, #loaves{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    margin: 20px 0;
+}
+
+#pastries h3, #sweets h3, #loaves h3{
+    grid-column: 1/-1;
+    font-size: 1.7rem;
+    margin: 5px 0;
+}
+
+.popular div{
     margin: 20px;
     background-color: var(--bg-card);
 }
 
-.popular h2, .all_items h2{
+.popular h2{
     grid-column: 1/-1;
 }
 
 .popular p, .all_items p{
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .popular img, .all_items img{

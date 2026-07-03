@@ -24,46 +24,48 @@
         <main id="main_index">
             <section class="popular">
                 <h2>Popular Items</h2>
-                <div>
-                    <img src="assets/croissant.webp">
-                    <p>Butter Croissant</p>
-                    <input type="number" min="1" max="10">
-                    <button>Add to cart</button>
+                <div class="product-card">
+                    <img src="assets/croissant.webp" alt="croissant" class="product-img">
+                    <p>Butter Croissant - $4.99</p>
+                    <label for="butter-croissant">Quantity:</label>
+                    <input type="number" min="1" max="10" id="butter-croissant">
+                    <button class="add-cart" data-name="Croissant" data-price="4.99">Add to cart</button>
                 </div>
-                <div>
-                    <img src="assets/salted_macaron.jpg">
-                    <p>Salted Caramel Macaron</p>
+                <div class="product-card">
+                    <img src="assets/salted_macaron.jpg" alt="salted caramel macaron" class="product-img">
+                    <p>Salted Caramel Macaron - $3.99</p>
                     <input type="number" min="1" max="10">
-                    <button>Add to cart</button>
+                    <button class="add-cart" data-name="Salted Caramel Macaron" data-price="3.99">Add to cart</button>
                 </div>
-                <div>
-                    <img src="assets/raisin_girella.jpeg">
-                    <p>Raisin Girella</p>
+                <div class="product-card">
+                    <img src="assets/raisin_girella.jpeg" alt="raisin girella" class="product-img">
+                    <p>Raisin Girella - $4.99</p>
                     <input type="number" min="1" max="10">
-                    <button>Add to cart</button>
+                    <button class="add-cart" data-name="Raisin Girella" data-price="4.99">Add to cart</button>
                 </div>
-                <div>
-                    <img src="assets/raspberry_cupcake.jpg">
-                    <p>Raspberry Cupcake</p>
+                <div class="product-card">
+                    <img src="assets/raspberry_cupcake.jpg" alt="raspberry cupcake" class="product-img">
+                    <p>Raspberry Cupcake - $3.99</p>
                     <input type="number" min="1" max="10">
-                    <button>Add to cart</button>
+                    <button class="add-cart" data-name="Raspberry Cupcake" data-price="3.99">Add to cart</button>
                 </div>
-                <div>
-                    <img src="assets/matcha_tiramisu.png">
-                    <p>Matcha Tiramisu</p>
+                <div class="product-card">
+                    <img src="assets/matcha_tiramisu.png" alt="matcha tiramisu" class="product-img">
+                    <p>Matcha Tiramisu - $7.99</p>
                     <input type="number" min="1" max="10">
-                    <button>Add to cart</button>
+                    <button class="add-cart" data-name="Matcha Tiramisu" data-price="7.99">Add to cart</button>
                 </div>
-                <div>
-                    <img src="assets/Maritozzi.jpg">
-                    <p>Maritozzo</p>
+                <div class="product-card">
+                    <img src="assets/Maritozzi.jpg" alt="Maritozzo" class="product-img">
+                    <p>Maritozzo - $6.99</p>
                     <input type="number" min="1" max="10">
-                    <button>Add to cart</button>
+                    <button class="add-cart" data-name="Maritozzo" data-price="6.99">Add to cart</button>
                 </div>
             </section>
             <section class="shopping-cart">
                 <h2>Cart</h2>
-                <button>Checkout</button>
+                <ul id="in-cart"></ul>
+                <button class="checkout">Checkout</button>
             </section>
         </main>
         <footer>

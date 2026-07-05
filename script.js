@@ -42,7 +42,7 @@ const products = [
         id: 5,
         price: 6.99,
         stock: 10,
-        img: "assets/maritozzi.jpg",
+        img: "assets/Maritozzi.jpg",
         description: "Maritozzo"
     },
     {

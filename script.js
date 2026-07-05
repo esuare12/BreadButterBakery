@@ -106,7 +106,8 @@ const products = [
 
 // grab the section where products are going to be added
 const productSection = document.getElementsByClassName("all_items")[0];
-
+const cartItems = document.getElementsByClassName("cart-items")[0];
+const subtotalPrice = document.getElementsByClassName("subtotal")[0];
 
 function displayProduct(){
     // console.log("displayProduct function is running!");
@@ -148,9 +149,8 @@ function addToCart(id){
 function updateCart(){
     console.log("updateCart function is running!");
     displayCart();
+    subtotalCart();
 }
-
-const cartItems = document.getElementsByClassName("cart-items")[0];
 
 function displayCart(){
     console.log("displayCart function is running!");
@@ -199,3 +199,18 @@ function changeUnits(action, id){
 }
 
 changeUnits();
+
+function subtotalCart(){
+    console.log("subtotalCart function is running!");
+    let totalPrice = 0,
+        totalItems = 0;
+    
+    cart.forEach( (item) => {
+        totalPrice += item.price * item.numberOfUnits;
+        totalItems += item.numberOfUnits;
+    });
+
+    subtotalPrice.innerHTML = `Subtotal (${totalItems} items): $${totalPrice.toFixed(2)}`;
+}
+
+subtotalCart()

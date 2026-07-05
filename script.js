@@ -104,14 +104,12 @@ const products = [
 
 ]
 
-
-
 // grab the section where products are going to be added
 const productSection = document.getElementsByClassName("all_items")[0];
 
 
 function displayProduct(){
-    console.log("displayProduct function is running!");
+    // console.log("displayProduct function is running!");
     products.forEach( (product)=> {
         productSection.innerHTML += `
             <div class="product" id="${product.id}">

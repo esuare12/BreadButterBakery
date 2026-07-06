@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,13 +50,16 @@ table {
     --fuchsia: #B42ECA;
     --dark-blue: #1A2059;
     --white: #ffffff;
+    --font: "Tektur", sans-serif;
 }
+
 
 body{
     width: 1400px;
     margin: 0 auto;
     background-color: var(--text);
     color: var(--white);
+    font-family: var(--font);
 }
 
 a:visited{

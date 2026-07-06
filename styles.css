@@ -103,8 +103,12 @@ nav a:hover{
     color: var(--light-blue);
 }
 
+#main_index{
+    margin: 20px auto;
+    width: 80%;
+}
 
-#main_index, #main_shop{
+#main_shop{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 30px;
@@ -140,9 +144,40 @@ section{
 
 h2{
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
-.popular, .all_items{
+.popular{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+}
+
+#explore{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: 5px solid var(--light-blue);
+    padding: 6px;
+    font-size: 30px;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#explore a{
+    text-decoration: none;
+}
+
+#explore a:visited{
+    color: var(--white);
+}
+
+#explore:hover{
+    border-color: var(--fuchsia);
+    cursor: pointer;
+}
+
+.all_items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-column: 1 / 2;
@@ -152,6 +187,7 @@ h2{
 .product{
     background-color: var(--dark-blue);
     height: fit-content;
+    width: fit-content;
     border: 4px solid var(--light-blue);
     border-radius: 7px;
 }

@@ -196,11 +196,16 @@ h2{
     border-color: var(--fuchsia);
 }
 
-.desc{
+#main_shop .desc{
     display: grid;
     grid-template-columns: 190px 50px;
     text-align: center;
     align-items: center;
+    padding: 8px 0;
+}
+
+#main_index .desc{
+    text-align: center;
     padding: 8px 0;
 }
 

@@ -48,7 +48,7 @@ table {
 :root {
     --text: #080A20;
     --light-blue: #79E2FF;
-    --fuchsia: #B42ECA;
+    --fuchsia: #cb80c6;
     --dark-blue: #1A2059;
     --white: #ffffff;
     --heading-font: "Tektur", sans-serif;
@@ -275,10 +275,12 @@ button .bag-icon{
     width: 200px;
     grid-template-columns: 45px 2fr;
     align-items: center;
+    text-align: start;
 }
 
 .item-info img{
     width: 40px;
+    margin-right: 5px;
 }
 
 .amount{
@@ -308,7 +310,7 @@ button .bag-icon{
 
 #checkout{
     background-color: var(--fuchsia);
-    color: var(--white);
+    color: var(--dark-blue);
     border: none;
     height: 45px;
     font-size: 30px;
@@ -317,8 +319,9 @@ button .bag-icon{
 
 #checkout:hover{
     cursor: pointer;
-    background-color: var(--light-blue);
-    color: var(--fuchsia);
+    background-color: var(--fuchsia);
+    color: var(--dark-blue);
+    border: 3px solid var(--white);
 }
 
 #main_about p{
